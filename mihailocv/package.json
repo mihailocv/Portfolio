@@ -1,0 +1,14 @@
+{
+  "name": "mihailocv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "scripts": {
+    "copy-bootstrap": "mkdir -p wwwroot/lib/bootstrap && cp -r node_modules/bootstrap/dist/* wwwroot/lib/bootstrap",
+    "postbuild": "npm run copy-bootstrap"
+  }
+}
