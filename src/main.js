@@ -28,7 +28,7 @@ function setDate(){
 }
 
 function setTemp(){
-  fetch(`http://api.openweathermap.org/data/2.5/weather?id=3194360&units=metric&appid=${apiKey}`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?id=3194360&units=metric&appid=${apiKey}`)
   .then(response => response.json())
   .then(displayData)
   .catch(err => console.log('Gresk sa vremenom'));
