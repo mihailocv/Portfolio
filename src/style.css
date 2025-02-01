@@ -94,3 +94,26 @@ h1, h2, h3, h4, h5, h6 {
 .about > p:not(:last-child) {
   margin-block-end: 10px;
 }
+
+.techntools > div{
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 15px;
+  padding-block: 20px;
+  margin-block-start: 10px;
+
+}
+
+.techntools img{
+  height: 70px;
+}
+
+::-webkit-scrollbar-button:horizontal:start,
+::-webkit-scrollbar-button:horizontal:end {
+  display: none;
+}
+
+::-webkit-scrollbar:horizontal{
+  height: 23px;
+}
