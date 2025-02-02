@@ -29,19 +29,19 @@
 
         <div class="modeless-dialog profile-dialog">
           <div class="square">
-            <img class="profile-picture" src="src/my_img.jpeg" alt="my image">
+            <img class="profile-picture" src="src/img/my_img.jpeg" alt="my image">
           </div>
           <h2>Mihailo Cvjetinović</h2>
           <p>Student at Higher Education Technical School of Professional Studies in Novi Sad</p>
           <div class="buttons">
-            <button class="btn btn-default">Contact</button>
-            <button class="btn">CV</button>
+            <a href="#" class="btn btn-default">Contact</a>
+            <a href="#" class="btn">CV</a>
           </div>
         </div>
       </div>
 
       <div class="standard-dialog about">
-        <h2>About</h2>
+        <h2 class="dialog-title">About</h2>
         <p>Hey there! I'm Mihailo, and I'm in my final year of studying computer science at Higher Education
           Technical School of Professional Studies in Novi Sad. My journey into the world of programming kicked off in
           elementary school with simple Pascal program, and it's been an exhilarating ride ever since! Now, I'm diving
@@ -55,7 +55,7 @@
       </div>
 
       <div class="standard-dialog techntools">
-        <h2>Technologies & Tools</h2>
+        <h2 class="dialog-title">Technologies & Tools</h2>
         <div>
           <img src="src/img/html5.png" alt="html 5 logo">
           <img src="src/img/css.png" alt="CSS logo">
@@ -63,7 +63,7 @@
           <img src="src/img/csharp.png" alt="C# logo">
           <img src="src/img/dotnet.png" alt=".Net logo">
           <img src="src/img/aspnet.png" alt="ASP.NET logo">
-          <img src="src/img/mysql.png" alt="MySQL logo">
+          <img src="src/img/my_sql.png" alt="MySQL logo">
           <img src="src/img/git.png" alt="Git logo">
           <img src="src/img/github.png" alt="GitHub logo">
           <img src="src/img/vitejs.png" alt="ViteJS logo">
@@ -71,8 +71,8 @@
         </div>
       </div>
 
-      <div class="standard-dialog block-3">
-        <h2>Soft Skills</h2>
+      <div class="standard-dialog soft-skills">
+        <h2 class="dialog-title">Soft Skills</h2>
         <ul>
           <li>Effective communication.</li>
           <li>Team Collaboration.</li>
@@ -87,40 +87,56 @@
         </ul>
       </div>
 
-      <div class="standard-dialog block-3">
-        <h2>Education</h2>
-        <h3>Higher Education Technical School of Professional Studies in Novi Sad - VTSNS</h3>
-        <p>Professional information technology engineer, Information technology</p>
-        <p>2022 - 2025</p>
-        <h3>Technical School Center Zvornik</h3>
-        <p>High School Diploma, Computer Technician.</p>
-        <p>2018 - 2022</p>
+      <div class="standard-dialog education">
+        <h2 class="dialog-title">Education</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-block">
+              <span class="timeline-block-title">Higher Education Technical School of Professional Studies in Novi Sad - VTŠNS</span>
+              <span class="timeline-block-desc">Professional information technology engineer, Information technology</span>
+              <span class="timeline-block-desc-light">2022 - 2025</span>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-block">
+              <span class="timeline-block-title">Technical School Center Zvornik</span>
+              <span class="timeline-block-desc">High School Diploma, Computer Technician.</span>
+              <span class="timeline-block-desc-light">2018 - 2022</span>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="standard-dialog block-3">
-        <h2>Experience</h2>
-        <h3>Team Member of Business Developmetn</h3>
-        <p>AIESEC in Serbia | Part-time</p>
-        <p>Jul 2023 - Feb 2024 | 8 months</p>
-        <p>Novi Sad, Vojvodina, Serbia</p>
+      <div class="standard-dialog experience">
+        <h2 class="dialog-title">Experience</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-block">
+              <span class="timeline-block-title">Team Member of Business Developmetn</span>
+              <span class="timeline-block-desc">AIESEC in Serbia | Part-time</span>
+              <span class="timeline-block-desc-light">Jul 2023 - Feb 2024 | 8 months</span>
+              <span class="timeline-block-desc-light">Novi Sad, Vojvodina, Serbia</span>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="standard-dialog link-block">
+      <div class="standard-dialog link-block lb1">
         <h2>Projects</h2>
         <a href="#" class="btn"><img src="src/img/arrow-up-right.svg" alt=""></a>
       </div>
 
-      <div class="standard-dialog link-block">
+      <div class="standard-dialog link-block lb2">
         <h2>CV</h2>
         <a href="#" class="btn"><img src="src/img/arrow-up-right.svg" alt=""></a>
       </div>
 
-      <div class="standard-dialog link-block">
+      <div class="standard-dialog link-block lb3">
         <h2>Contact</h2>
         <a href="#" class="btn"><img src="src/img/arrow-up-right.svg" alt=""></a>
       </div>
 
-      <div class="standard-dialog block-3">
+      <div class="standard-dialog footer">
         <p class="dialog-text">Made with love, mihailocv.</p>
       </div>
     </div>

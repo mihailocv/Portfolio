@@ -40,16 +40,12 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/**/
+/* Start of styling*/
 
 .wrapper {
   width: min(100% - 3rem, 75rem);
   margin-inline: auto;
-  padding-block: 60px;
-
-  /* @include u.breakpoint(large) {
-    padding-block: 80px;
-  } */
+  padding-block: 30px;
 }
 
 .grid{
@@ -87,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-.about h2 {
+.dialog-title{
   margin-block-end: 10px;
 }
 
@@ -99,14 +95,39 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
-  gap: 15px;
+  gap: 25px;
   padding-block: 20px;
-  margin-block-start: 10px;
-
 }
 
 .techntools img{
   height: 70px;
+}
+
+.soft-skills ul{
+  padding-left: 20px;
+}
+
+.timeline{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-block: 10px;
+}
+
+.timeline-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-block-title {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.timeline-block-desc-light{
+  opacity: .6;
 }
 
 .link-block{

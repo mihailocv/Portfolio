@@ -23,8 +23,9 @@ function formatClock(i){
 }
 
 function setDate(){
-  let currentDate = new Date().toLocaleDateString('sr-RS');
-  date.innerHTML = currentDate;
+  let currentDate = new Date();
+  date.innerHTML = `${currentDate.getDate()} . ${currentDate.getMonth()+1} . 1988`;
+  setTimeout(setTime, 60000);
 }
 
 function setTemp(){
