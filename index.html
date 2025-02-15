@@ -1,146 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mihailocv</title>
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" src="src/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mihailocv</title>
-  <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
-  <link rel="stylesheet" href="src/style.css">
-  <script type="module" src="src/main.js" defer></script>
-</head>
-
-<body>
-  <main class="wrapper">
-    <div class="grid">
-
-      <div class="window profile-window">
-        <div class="title-bar">
-          <button aria-label="Close" class="close"></button>
-          <h1 class="title">Personal portfolio</h1>
-          <button aria-label="Resize" class="resize"></button>
-        </div>
-
-        <div class="details-bar profile-details-bar">
-          <span id="time"></span>
-          <span id="date"></span>
-          <span id="temp">--&deg;C</span>
-        </div>
-
-        <div class="modeless-dialog profile-dialog">
-          <div class="square">
-            <img class="profile-picture" src="src/img/my_img.jpeg" alt="my image">
+  <body>
+    <main class="wrapper">
+      <div class="grid">
+        <div class="window profile-window">
+          <div class="title-bar">
+            <button aria-label="Close" class="close"></button>
+            <h1 class="title">Personal portfolio</h1>
+            <button aria-label="Resize" class="resize"></button>
           </div>
-          <h2>Mihailo Cvjetinović</h2>
-          <p>Student at Higher Education Technical School of Professional Studies in Novi Sad</p>
-          <div class="buttons">
-            <a href="#" class="btn btn-default">Contact</a>
-            <a href="#" class="btn">CV</a>
+
+          <div class="details-bar profile-details-bar">
+            <span id="time"></span>
+            <span id="date"></span>
+            <span id="temp">--&deg;C</span>
+          </div>
+
+          <div class="modeless-dialog profile-dialog">
+            <div class="square">
+              <img
+                class="profile-picture"
+                src="src/img/my_img.jpeg"
+                alt="my image"
+              />
+            </div>
+            <h2>Mihailo Cvjetinović</h2>
+            <p>
+              Student at Higher Education Technical School of Professional
+              Studies in Novi Sad
+            </p>
+            <div class="buttons">
+              <a
+                href="https://sherr.it/mihailocv"
+                class="btn btn-default"
+                target="_blank"
+                >Contact</a
+              >
+              <a href="/cv.pdf" class="btn" target="_blank">CV</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="standard-dialog about">
-        <h2 class="dialog-title">About</h2>
-        <p>Hey there! I'm Mihailo, and I'm in my final year of studying computer science at Higher Education
-          Technical School of Professional Studies in Novi Sad. My journey into the world of programming kicked off in
-          elementary school with simple Pascal program, and it's been an exhilarating ride ever since! Now, I'm diving
-          into complex ASP.NET projects that challenge my creativity, problem-solving abilities, and attention to
-          details.</p>
-        <p>Programming isn't just a study for me, it's my passion and a huge part of my life. I thrive in collaborative
-          environment, enjoy tackling challenges head-on, and constantly seek ways to improve my skills. Beyond my
-          academic work, I've taken on a multitude of programming courses that ignite my curiosity and help me stay
-          adaptive in a rapidly evolving industry. Exploring the vast universe of programming has turned into an exiting
-          hobby that fuels my drive for continuous learning and innovation!</p>
-      </div>
+        <div class="standard-dialog about">
+          <h2 class="dialog-title">About</h2>
+          <p>
+            Hey there! I'm Mihailo, and I'm in my final year of studying
+            computer science at the Higher Education Technical School of
+            Professional Studies in Novi Sad. My journey into the world of
+            programming kicked off in elementary school with a simple Pascal
+            program, and it's been an exhilarating ride ever since! Now, I'm
+            diving into complex ASP.NET projects that challenge my creativity,
+            problem-solving abilities, and attention to detail.
+          </p>
+          <p>
+            Programming isn't just a study for me, it's my passion and a huge
+            part of my life. I thrive in collaborative environments, enjoy
+            tackling challenges head-on, and constantly seek ways to improve my
+            skills. Beyond my academic work, I've taken on a multitude of
+            programming courses that ignite my curiosity and help me stay
+            adaptive in a rapidly evolving industry. Exploring the vast universe
+            of programming has turned into an exciting hobby that fuels my drive
+            for continuous learning and innovation!
+          </p>
+        </div>
 
-      <div class="standard-dialog techntools">
-        <h2 class="dialog-title">Technologies & Tools</h2>
-        <div>
-          <img src="src/img/html5.png" alt="html 5 logo">
-          <img src="src/img/css.png" alt="CSS logo">
-          <img src="src/img/js.png" alt="Java Script logo">
-          <img src="src/img/csharp.png" alt="C# logo">
-          <img src="src/img/dotnet.png" alt=".Net logo">
-          <img src="src/img/aspnet.png" alt="ASP.NET logo">
-          <img src="src/img/my_sql.png" alt="MySQL logo">
-          <img src="src/img/git.png" alt="Git logo">
-          <img src="src/img/github.png" alt="GitHub logo">
-          <img src="src/img/vitejs.png" alt="ViteJS logo">
-          <img src="src/img/netlify.png" alt="Netlify logo">
+        <div class="standard-dialog techntools">
+          <h2 class="dialog-title">Technologies & Tools</h2>
+          <div>
+            <img src="src/img/html5.png" alt="HTML5 logo" />
+            <img src="src/img/css.png" alt="CSS logo" />
+            <img src="src/img/js.png" alt="JavaScript logo" />
+            <img src="src/img/csharp.png" alt="C# logo" />
+            <img src="src/img/dotnet.png" alt=".NET logo" />
+            <img src="src/img/aspnet.png" alt="ASP.NET logo" />
+            <img src="src/img/my_sql.png" alt="MySQL logo" />
+            <img src="src/img/git.png" alt="Git logo" />
+            <img src="src/img/github.png" alt="GitHub logo" />
+            <img src="src/img/vitejs.png" alt="ViteJS logo" />
+            <img src="src/img/netlify.png" alt="Netlify logo" />
+          </div>
+        </div>
+
+        <div class="standard-dialog soft-skills">
+          <h2 class="dialog-title">Soft Skills</h2>
+          <ul>
+            <li>Effective communication.</li>
+            <li>Team Collaboration.</li>
+            <li>Adaptability.</li>
+            <li>Problem-Solving.</li>
+            <li>Continuous Learning.</li>
+            <li>Emotional Intelligence.</li>
+            <li>Time Managment.</li>
+            <li>Attention to Details.</li>
+            <li>Resilience.</li>
+            <li>Proactivity.</li>
+          </ul>
+        </div>
+
+        <div class="standard-dialog education">
+          <h2 class="dialog-title">Education</h2>
+          <ul class="timeline">
+            <li>
+              <div class="timeline-block">
+                <span class="timeline-block-title"
+                  >Higher Education Technical School of Professional Studies in
+                  Novi Sad - VTŠNS</span
+                >
+                <span class="timeline-block-desc"
+                  >Professional information technology engineer, Information
+                  technology</span
+                >
+                <span class="timeline-block-desc-light">2022 - 2025</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-block">
+                <span class="timeline-block-title"
+                  >Technical School Center Zvornik</span
+                >
+                <span class="timeline-block-desc"
+                  >High School Diploma, Computer Technician.</span
+                >
+                <span class="timeline-block-desc-light">2018 - 2022</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="standard-dialog experience">
+          <h2 class="dialog-title">Experience</h2>
+          <ul class="timeline">
+            <li>
+              <div class="timeline-block">
+                <span class="timeline-block-title"
+                  >Team Member of Business Developmetn</span
+                >
+                <span class="timeline-block-desc"
+                  >AIESEC in Serbia | Part-time</span
+                >
+                <span class="timeline-block-desc-light"
+                  >Jul 2023 - Feb 2024 | 8 months</span
+                >
+                <span class="timeline-block-desc-light"
+                  >Novi Sad, Vojvodina, Serbia</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="standard-dialog link-block lb1">
+          <h2>Projects</h2>
+          <a
+            href="https://github.com/mihailocv?tab=repositories"
+            class="btn"
+            target="_blank"
+            ><img src="src/img/arrow-up-right.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="standard-dialog link-block lb2">
+          <h2>CV</h2>
+          <a href="/cv.pdf" class="btn" target="_blank"
+            ><img src="src/img/arrow-up-right.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="standard-dialog link-block lb3">
+          <h2>Contact</h2>
+          <a href="https://sherr.it/mihailocv" class="btn" target="_blank"
+            ><img src="src/img/arrow-up-right.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="standard-dialog footer">
+          <p class="dialog-text">Made with love, mihailocv.</p>
         </div>
       </div>
-
-      <div class="standard-dialog soft-skills">
-        <h2 class="dialog-title">Soft Skills</h2>
-        <ul>
-          <li>Effective communication.</li>
-          <li>Team Collaboration.</li>
-          <li>Adaptability.</li>
-          <li>Problem-Solving.</li>
-          <li>Continuous Learning.</li>
-          <li>Emotional Intelligence.</li>
-          <li>Time Managment.</li>
-          <li>Attention to Details.</li>
-          <li>Resilience.</li>
-          <li>Proactivity.</li>
-        </ul>
-      </div>
-
-      <div class="standard-dialog education">
-        <h2 class="dialog-title">Education</h2>
-        <ul class="timeline">
-          <li>
-            <div class="timeline-block">
-              <span class="timeline-block-title">Higher Education Technical School of Professional Studies in Novi Sad - VTŠNS</span>
-              <span class="timeline-block-desc">Professional information technology engineer, Information technology</span>
-              <span class="timeline-block-desc-light">2022 - 2025</span>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-block">
-              <span class="timeline-block-title">Technical School Center Zvornik</span>
-              <span class="timeline-block-desc">High School Diploma, Computer Technician.</span>
-              <span class="timeline-block-desc-light">2018 - 2022</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="standard-dialog experience">
-        <h2 class="dialog-title">Experience</h2>
-        <ul class="timeline">
-          <li>
-            <div class="timeline-block">
-              <span class="timeline-block-title">Team Member of Business Developmetn</span>
-              <span class="timeline-block-desc">AIESEC in Serbia | Part-time</span>
-              <span class="timeline-block-desc-light">Jul 2023 - Feb 2024 | 8 months</span>
-              <span class="timeline-block-desc-light">Novi Sad, Vojvodina, Serbia</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="standard-dialog link-block lb1">
-        <h2>Projects</h2>
-        <a href="#" class="btn"><img src="src/img/arrow-up-right.svg" alt=""></a>
-      </div>
-
-      <div class="standard-dialog link-block lb2">
-        <h2>CV</h2>
-        <a href="#" class="btn"><img src="src/img/arrow-up-right.svg" alt=""></a>
-      </div>
-
-      <div class="standard-dialog link-block lb3">
-        <h2>Contact</h2>
-        <a href="#" class="btn"><img src="src/img/arrow-up-right.svg" alt=""></a>
-      </div>
-
-      <div class="standard-dialog footer">
-        <p class="dialog-text">Made with love, mihailocv.</p>
-      </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>

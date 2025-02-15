@@ -29,10 +29,14 @@ function setDate(){
 }
 
 function setTemp(){
-  fetch(`https://api.openweathermap.org/data/2.5/weather?id=3194360&units=metric&appid=${apiKey}`)
+  if (!apiKey) {
+    console.error('API key is missing');
+    return;
+  }
+  fetch(`http://api.openweathermap.org/data/2.5/weather?id=3194360&units=metric&appid=${apiKey}`)
   .then(response => response.json())
   .then(displayData)
-  .catch(err => console.log('Gresk sa vremenom'));
+  .catch(error => console.log('Gresk sa vremenom: ', error));
 }
 
 const displayData=(weather)=>{
