@@ -1,0 +1,19 @@
+User-agent: googlebot-image
+Disallow:/
+User-agent: baiduspider
+Disallow:/
+User-agent: naverbot
+Disallow:/
+User-agent: yeti
+Disallow:/
+User-agent: yahoo-mmcrawler
+Disallow:/
+User-agent: psbot
+Disallow:/
+User-agent: yahoo-blogs/v3.9
+Disallow:/
+User-agent: *
+Disallow:
+Disallow: /assets/
+Disallow: /cgi-bin/
+Sitemap: https://mihailocv.com/sitemap.xml

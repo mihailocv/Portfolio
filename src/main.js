@@ -32,7 +32,6 @@ function setTemp() {
   if (!apiKey) {
     console.error("API key is missing");
   } else {
-    console.log("API key loaded successfully");
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?id=3194360&units=metric&appid=${apiKey}`
     )
