@@ -1,5 +1,7 @@
 # Portfolio
 
+![Banner photo](src/img/mihailocv.png)
+
 This is the personal portfolio of Mihailo Cvjetinović, showcasing his skills, projects, and experiences.
 
 ## Table of Contents
