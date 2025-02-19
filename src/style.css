@@ -50,7 +50,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid{
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 100%));
+  grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box10";
+  gap: 20px;
 }
 
 .profile-window{
@@ -154,4 +167,70 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-scrollbar:horizontal{
   height: 23px;
+}
+
+
+
+
+.profile-window {
+  grid-area: box1;
+}
+
+.about {
+  grid-area: box2;
+}
+
+.techntools {
+  grid-area: box3;
+}
+
+.soft-skills {
+  grid-area: box4;
+} 
+
+.education {
+  grid-area: box5;
+}
+
+.experience {
+  grid-area: box6;
+}
+
+.lb1 {
+  grid-area: box7;
+}
+
+.lb2 {
+  grid-area: box8;
+}
+
+.lb3 {
+  grid-area: box9;
+}
+
+.footer {
+  grid-area: box10;
+}
+
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-areas:
+        "box1 box2 box2"
+        "box1 box3 box3"
+        "box4 box5 box6"
+        "box7 box8 box9"
+        "box10 box10 box10";
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid {
+    grid-template-areas:
+        "box1 box2"
+        "box3 box3"
+        "box4 box5"
+        "box6 box7"
+        "box6 box8"
+        "box10 box9";
+  }
 }
