@@ -3,7 +3,9 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -14,29 +16,49 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  cursor: url(img/cursor-default.svg), default;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -48,38 +70,38 @@ h1, h2, h3, h4, h5, h6 {
   padding-block: 30px;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr));
   grid-template-rows: repeat(auto-fit, minmax(200px, 100%));
   grid-template-areas:
-        "box1"
-        "box2"
-        "box3"
-        "box4"
-        "box5"
-        "box6"
-        "box7"
-        "box8"
-        "box9"
-        "box10";
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8"
+    "box9"
+    "box10";
   gap: 20px;
 }
 
-.profile-window{
+.profile-window {
   margin: 0;
   min-width: auto;
 }
 
-.title-bar .title{
+.title-bar .title {
   font-size: clamp(1rem, 8vw + -0.6rem, 1.5rem);
 }
 
-.profile-details-bar{
+.profile-details-bar {
   font-weight: bold;
 }
 
-.profile-dialog{
+.profile-dialog {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-.dialog-title{
+.dialog-title {
   margin-block-end: 10px;
 }
 
@@ -104,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-block-end: 10px;
 }
 
-.techntools > div{
+.techntools > div {
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
@@ -112,15 +134,15 @@ h1, h2, h3, h4, h5, h6 {
   padding-block: 20px;
 }
 
-.techntools img{
+.techntools img {
   height: 70px;
 }
 
-.soft-skills ul{
+.soft-skills ul {
   padding-left: 20px;
 }
 
-.timeline{
+.timeline {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -139,16 +161,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.125rem;
 }
 
-.timeline-block-desc-light{
-  opacity: .6;
+.timeline-block-desc-light {
+  opacity: 0.6;
 }
 
-.link-block{
+.link-block {
   display: flex;
   justify-content: space-between;
 }
 
-.link-block .btn{
+.link-block .btn {
   padding: 10px;
   width: 50px;
   height: 50px;
@@ -156,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: auto;
 }
 
-.link-block .btn > img{
+.link-block .btn > img {
   display: inline-block;
 }
 
@@ -165,12 +187,19 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-::-webkit-scrollbar:horizontal{
+::-webkit-scrollbar:horizontal {
   height: 23px;
 }
 
+.hover-effect {
+  scale: 1;
+  transition: 0.2s ease-out;
+}
 
-
+.hover-effect:hover {
+  scale: 1.03;
+  box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;
+}
 
 .profile-window {
   grid-area: box1;
@@ -186,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .soft-skills {
   grid-area: box4;
-} 
+}
 
 .education {
   grid-area: box5;
@@ -212,25 +241,29 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: box10;
 }
 
+.btn {
+  cursor: url(img/hand-cursor.svg), pointer;
+}
+
 @media (min-width: 1025px) {
   .grid {
     grid-template-areas:
-        "box1 box2 box2"
-        "box1 box3 box3"
-        "box4 box5 box6"
-        "box7 box8 box9"
-        "box10 box10 box10";
+      "box1 box2 box2"
+      "box1 box3 box3"
+      "box4 box5 box6"
+      "box7 box8 box9"
+      "box10 box10 box10";
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .grid {
     grid-template-areas:
-        "box1 box2"
-        "box3 box3"
-        "box4 box5"
-        "box6 box7"
-        "box6 box8"
-        "box10 box9";
+      "box1 box2"
+      "box3 box3"
+      "box4 box5"
+      "box6 box7"
+      "box6 box8"
+      "box10 box9";
   }
 }
